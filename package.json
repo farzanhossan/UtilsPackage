@@ -9,6 +9,7 @@
     "build": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
+    "updateVersion": "npm version patch",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
