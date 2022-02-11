@@ -10,12 +10,22 @@ export const AsyncForEach = async (array: any[], callback: any) => {
     }
 };
 
-//! Array of Objects GroupBy Using Attribute
-export const groupByAttribute = (array: any[], attr: string) => {
+//! Array of Objects GroupBy Using Attribute --- Return A Object
+export const GroupByAttribute = (array: any[], attr: string): any => {
     const result = array.reduce((r, a) => {
         r[a[attr]] = r[a[attr]] || [];
         r[a[attr]].push(a);
         return r;
     }, Object.create(null));
     return result;
+};
+
+//! Array of Objects Unique Using Attribute --- Return An Array
+export const UniqueArrayOfObjects = (array: any[], attr: string): any[] => {
+    return [...new Map(array.map(item => [item[attr], item])).values()];
+};
+
+//! Plain Array Unique Using Attribute ---Return An Array
+export const UniqueArray = (array: any[]): any[] => {
+    return [...new Set(array)]
 };
