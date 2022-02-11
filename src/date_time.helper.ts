@@ -11,7 +11,7 @@ export const GetStartAndEndDateTime = (startDate: string, endDate: string) => {
 };
 
 //! Seconds To Time
-export const SecondsToTime = (secs: number): any => {
+export const SecondsToTime = (secs: number): { hours: number, minutes: number, seconds: number } => {
     const hours = Math.floor(secs / (60 * 60));
     const divisorForMinutes = secs % (60 * 60);
     const minutes = Math.floor(divisorForMinutes / 60);
@@ -25,7 +25,7 @@ export const SecondsToTime = (secs: number): any => {
 }
 
 //! Get Time Difference
-export const GetTimeDifference = (fromTime: Date, toTime: Date): any => {
+export const GetTimeDifference = (fromTime: Date, toTime: Date): { hours: number, minutes: number, seconds: number } => {
     const rDate = new Date(fromTime);
     const aDate = new Date(toTime);
     const seconds = (aDate.getTime() - rDate.getTime()) / 1000;
