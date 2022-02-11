@@ -8,57 +8,57 @@ For Utils Fuctions
 
 ## Date Time Related
 
-- **_GetStartAndEndDateTime()_**
+###### - GetStartAndEndDateTime()
 
-`GetStartAndEndDateTime("2021-01-01", "2021-01-02")`
+    GetStartAndEndDateTime("2021-01-01", "2021-01-02")
 
-- **_SecondsToTime()_**
+###### - SecondsToTime()
 
-`SecondsToTime(5000)`
+    SecondsToTime(5000)
 
-- **_GetTimeDifference()_**
+###### - GetTimeDifference()
 
-`GetTimeDifference("2021-01-01", "2021-01-02")`
+    GetTimeDifference("2021-01-01", "2021-01-02")
 
 ## Array Related
 
-- **_GroupByAttribute()_**
+###### - GroupByAttribute()
 
-`GroupByAttribute( array[] , "key" )`
+    GroupByAttribute( array[] , "key" )
 
-- **_AsyncForEach()_**
+###### - AsyncForEach()
 
-`AsyncForEach( array[] , callback )`
+    AsyncForEach( array[] , callback )
 
-- **_UniqueArrayOfObjects()_**
+###### - UniqueArrayOfObjects()
 
-`UniqueArrayOfObjects( array[] , "attribute" )`
+    UniqueArrayOfObjects( array[] , "attribute" )
 
-- **_UniqueArray()_**
+###### - UniqueArray()
 
-`UniqueArray( array[])`
+    UniqueArray( array[])
 
-- **_ParseObjectToArray()_**
+###### - ParseObjectToArray()
 
-`ParseObjectToArray({ a: 1 })`
+    ParseObjectToArray({ a: 1 })
 
-- **_JsonChunkArray()_**
+###### - JsonChunkArray()
 
-`JsonChunkArray([{ a: 1 },{ b: 2 }], 1)`
+    JsonChunkArray([{ a: 1 },{ b: 2 }], 1)
 
 ## String Related
 
-- **_IsValidEmail()_**
+###### - IsValidEmail()
 
-`IsValidEmail( "example@example.com" )`
+    IsValidEmail( "example@example.com" )
 
-- **_IsValidPhoneNumber()_**
+###### - IsValidPhoneNumber()
 
-`IsValidPhoneNumber( "+8801700000000" )`
+    IsValidPhoneNumber( "+8801700000000" )
 
-- **_CamelCaseToSeparateString()_**
+###### - CamelCaseToSeparateString()
 
-`CamelCaseToSeparateString( "exampleCamelCase" )`
+    CamelCaseToSeparateString( "exampleCamelCase" )
 
 # Editor
 
