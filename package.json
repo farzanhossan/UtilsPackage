@@ -10,7 +10,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
     "version": "git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "publish": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
