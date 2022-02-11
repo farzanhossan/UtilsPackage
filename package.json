@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "updateVersion": "npm version patch",
+    "new:publish": "npm version patch && npm publish",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "prepare": "npm run build",
