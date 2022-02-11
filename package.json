@@ -5,11 +5,11 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "updateVersion": "npm version patch",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
-    "updateVersion": "npm version patch",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
