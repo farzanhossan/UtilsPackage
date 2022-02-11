@@ -1,43 +1,65 @@
 # UtilsPackage
+
 For Utils Fuctions
+
 # Features
 
 #### Only Utils Functions.. Just Enjoy..
--  ***GetStartAndEndDateTime()***
 
-`GetStartAndEndDateTime( "01-01-2022" , ''01-01-2022'' )`
+## Date Time Related
 
--  ***GroupByAttribute()***
+- **_GetStartAndEndDateTime()_**
+
+`GetStartAndEndDateTime("2021-01-01", "2021-01-02")`
+
+- **_SecondsToTime()_**
+
+`SecondsToTime(5000)`
+
+- **_GetTimeDifference()_**
+
+`GetTimeDifference("2021-01-01", "2021-01-02")`
+
+## Array Related
+
+- **_GroupByAttribute()_**
 
 `GroupByAttribute( array[] , "key" )`
 
--  ***AsyncForEach()***
+- **_AsyncForEach()_**
 
 `AsyncForEach( array[] , callback )`
 
-- ***UniqueArrayOfObjects()***
+- **_UniqueArrayOfObjects()_**
 
 `UniqueArrayOfObjects( array[] , "attribute" )`
 
--  ***UniqueArray()***
+- **_UniqueArray()_**
 
 `UniqueArray( array[])`
 
--  ***IsValidEmail()***
+- **_ParseObjectToArray()_**
+
+`ParseObjectToArray({ a: 1 })`
+
+- **_JsonChunkArray()_**
+
+`JsonChunkArray([{ a: 1 },{ b: 2 }], 1)`
+
+## String Related
+
+- **_IsValidEmail()_**
 
 `IsValidEmail( "example@example.com" )`
 
--  ***IsValidPhoneNumber()***
+- **_IsValidPhoneNumber()_**
 
 `IsValidPhoneNumber( "+8801700000000" )`
 
--  ***CamelCaseToSeparateString()***
+- **_CamelCaseToSeparateString()_**
 
 `CamelCaseToSeparateString( "exampleCamelCase" )`
 
-
-
-
 # Editor
 
-***Farzan Hossan Shaikat***
+**_Farzan Hossan Shaikat_**
