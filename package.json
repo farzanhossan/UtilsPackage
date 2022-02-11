@@ -1,5 +1,5 @@
 {
-  "name": "UtilsPackage",
+  "name": "utils-friendly",
   "version": "1.0.0",
   "description": "Utils Function For Better Coding Life",
   "main": "lib/index.js",
@@ -7,16 +7,19 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test",
-    "version" : "git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/farzanhossan/UtilsPackage.git"
   },
-  "keywords": ["Hello", "Greeter"],
+  "keywords": [
+    "Hello",
+    "Greeter"
+  ],
   "author": "Farzan Hossan Shaikat",
   "license": "ISC",
   "bugs": {
@@ -31,5 +34,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
