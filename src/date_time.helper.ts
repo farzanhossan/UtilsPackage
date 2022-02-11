@@ -25,7 +25,7 @@ export const SecondsToTime = (secs: number): { hours: number, minutes: number, s
 }
 
 //! Get Time Difference
-export const GetTimeDifference = (fromTime: Date, toTime: Date): { hours: number, minutes: number, seconds: number } => {
+export const GetTimeDifference = (fromTime: string, toTime: string): { hours: number, minutes: number, seconds: number } => {
     const rDate = new Date(fromTime);
     const aDate = new Date(toTime);
     const seconds = (aDate.getTime() - rDate.getTime()) / 1000;
