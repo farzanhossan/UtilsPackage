@@ -31,3 +31,14 @@ export const IsValidUuid = (uuid: string): boolean => {
         return false;
     }
 }
+
+//! Generate Key Or Code
+export const GenerateKeyOrCode = (digit: number, charType?: string): string => {
+    const stringType = charType ? charType === 'OCTAL' ? 8 : charType === 'HEX' ? 16 : 8 : 8
+    const length = digit ? digit : 10
+    return ('x'.repeat(length)).replace(/[xy]/g, function (char) {
+        const randomNumber = (Math.random() * stringType) | 0;
+        const value = char == 'x' ? randomNumber : (randomNumber & 0x3) | 0x8;
+        return value.toString(stringType).toUpperCase();
+    });
+}

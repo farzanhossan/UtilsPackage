@@ -64,6 +64,10 @@ For Utils Fuctions
 
     CamelCaseToSeparateString("exampleCamelCase")
 
+###### - GenerateKeyOrCode()
+
+    GenerateKeyOrCode(5, "HEX || OCTAL")
+
 # Editor
 
 **_Farzan Hossan Shaikat_**
