@@ -50,15 +50,15 @@ For Utils Fuctions
 
 ###### - IsValidEmail()
 
-    IsValidEmail( "example@example.com" )
+    IsValidEmail("example@example.com")
 
-###### - IsValidPhoneNumber()
+###### - IsValidBDPhoneNumber()
 
-    IsValidPhoneNumber( "+8801700000000" )
+    IsValidBDPhoneNumber("+8801700000000")
 
 ###### - CamelCaseToSeparateString()
 
-    CamelCaseToSeparateString( "exampleCamelCase" )
+    CamelCaseToSeparateString("exampleCamelCase")
 
 # Editor
 
