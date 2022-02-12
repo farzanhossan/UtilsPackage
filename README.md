@@ -56,6 +56,10 @@ For Utils Fuctions
 
     IsValidBDPhoneNumber("+8801700000000")
 
+###### - IsValidUUID()
+
+    IsValidUUID("48a2d845-edfa-4681-926e-31f635771da5")
+
 ###### - CamelCaseToSeparateString()
 
     CamelCaseToSeparateString("exampleCamelCase")

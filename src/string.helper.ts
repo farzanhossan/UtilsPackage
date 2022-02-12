@@ -1,13 +1,13 @@
-import { ENV } from "./config/env";
+import { BD_NUMBER_REGEX, EMAIL_REGEX, UUID_REGEX } from "./regex.helper";
 
 //! Email Validation True/False
 export const IsValidEmail = (email: string): boolean => {
-    return email ? email.match(ENV.EMAIL_REGEX || '') ? true : false : false
+    return email ? email.match(EMAIL_REGEX) ? true : false : false
 };
 
 //! BD Phone Number Validation True/False
 export const IsValidBDPhoneNumber = (number: string): boolean => {
-    return number ? number.match(ENV.BD_NUMBER_REGEX || '') ? true : false : false
+    return number ? number.match(BD_NUMBER_REGEX) ? true : false : false
 };
 
 //! CamelCaseToSeparateString
@@ -18,9 +18,10 @@ export const CamelCaseToSeparateString = (string: any): string => {
 };
 
 //! UUID Validation  True/False
-export const isValidUuid = (uuid: string): boolean => {
+export const IsValidUuid = (uuid: string): boolean => {
     try {
-        const res = uuid.match(ENV.UUID_REGEX || '');
+        const res = uuid.match(UUID_REGEX);
+
         if (res && res.length > 0) {
             return true;
         } else {
