@@ -1,6 +1,6 @@
 {
   "name": "utils-friendly",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Utils Function For Better Coding Life",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
