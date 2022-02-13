@@ -13,13 +13,19 @@ export const AsyncForEach = async (array: any[], callback: any) => {
 };
 
 //! Array of Objects GroupBy Using Attribute --- Return A Object
-export const GroupByAttribute = (array: any[], attr: string): any => {
+export const ArrayGroupByAttribute = (array: any[], attr: string): any => {
     const result = array.reduce((r, a) => {
         r[a[attr]] = r[a[attr]] || [];
         r[a[attr]].push(a);
         return r;
     }, Object.create(null));
     return result;
+};
+
+//! Array of Objects CountBy Using Attribute --- Return A Object
+export const ArrayCountByAttribute = (array: any[], attr: string): any => {
+    const result = array.reduce((previousValue, currentValue) => ((previousValue[currentValue[attr]] = ++previousValue[currentValue[attr]] || 1), previousValue), {});
+    return result
 };
 
 //! Array of Objects Unique Using Attribute --- Return An Array

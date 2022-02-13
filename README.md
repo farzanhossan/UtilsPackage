@@ -33,12 +33,20 @@ For Utils Fuctions
 
 ## Array Related
 
-###### - GroupByAttribute()
+###### - ArrayGroupByAttribute()
 
-    GroupByAttribute( array[] , key )
+    ArrayGroupByAttribute( array[] , key )
 
         Example:
             array[objects]: array[] = [{ name: "Jhon Doe" },{ name: "Alexa" }]
+            key: string = "name"
+
+###### - ArrayCountByAttribute()
+
+    ArrayCountByAttribute( array[] , key )
+
+        Example:
+            array[objects]: array[] = [{ name: "Jhon Doe", age: 25 },{ name: "Alexa", age: 27 }, { name: "Alexa", age: 28 }]
             key: string = "name"
 
 ###### - AsyncForEach()
