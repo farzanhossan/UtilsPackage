@@ -10,21 +10,36 @@ For Utils Fuctions
 
 ###### - GetStartAndEndDateTime()
 
-    GetStartAndEndDateTime("2021-01-01", "2021-01-02")
+    GetStartAndEndDateTime(fromDate, toDate)
+
+        Example:
+            fromDate: string = "2021-01-01"
+            toDate: string = "2021-01-02"
 
 ###### - SecondsToTime()
 
-    SecondsToTime(5000)
+    SecondsToTime(seconds)
+
+        Example:
+            seconds: number = 5000
 
 ###### - GetTimeDifference()
 
-    GetTimeDifference("2021-01-01", "2021-01-02")
+    GetTimeDifference(fromDate, toDate)
+
+        Example:
+            fromDate: string = "2021-01-01"
+            toDate: string = "2021-01-02"
 
 ## Array Related
 
 ###### - GroupByAttribute()
 
-    GroupByAttribute( array[] , "key" )
+    GroupByAttribute( array[] , key )
+
+        Example:
+            array[objects]: array[] = [{ name: "Jhon Doe" },{ name: "Alexa" }]
+            key: string = "name"
 
 ###### - AsyncForEach()
 
@@ -32,41 +47,71 @@ For Utils Fuctions
 
 ###### - UniqueArrayOfObjects()
 
-    UniqueArrayOfObjects( array[] , "attribute" )
+    UniqueArrayOfObjects( array[] , attribute )
+
+        Example:
+            array[objects]: array[] = [{ name: "Jhon Doe" },{ name: "Alexa" }]
+            attribute: string = "name"
 
 ###### - UniqueArray()
 
     UniqueArray( array[])
 
+        Example:
+            array: array[] = [ 1, 2, 3, 4]
+
 ###### - ParseObjectToArray()
 
-    ParseObjectToArray({ a: 1 })
+    ParseObjectToArray( object )
+
+        Example:
+            object: { a: 1 }
 
 ###### - JsonChunkArray()
 
-    JsonChunkArray([{ a: 1 },{ b: 2 }], 1)
+    JsonChunkArray( array[objects], size )
+
+        Example:
+            array[objects]: array[] = [{ a: 1 },{ b: 2 }]
+            size: number = 1
 
 ## String Related
 
 ###### - IsValidEmail()
 
-    IsValidEmail("example@example.com")
+    IsValidEmail( email )
+
+        Example:
+            email: string = "example@example.com"
 
 ###### - IsValidBDPhoneNumber()
 
-    IsValidBDPhoneNumber("+8801700000000")
+    IsValidBDPhoneNumber( number )
+
+        Example:
+            number: string = "+8801700000000"
 
 ###### - IsValidUUID()
 
-    IsValidUUID("48a2d845-edfa-4681-926e-31f635771da5")
+    IsValidUUID( uuid )
+
+        Example:
+            uuid: string = "48a2d845-edfa-4681-926e-31f635771da5"
 
 ###### - CamelCaseToSeparateString()
 
-    CamelCaseToSeparateString("exampleCamelCase")
+    CamelCaseToSeparateString( camelCaseString )
+
+        Example:
+            camelCaseString: string = "exampleCamelCase"
 
 ###### - GenerateKeyOrCode()
 
     GenerateKeyOrCode(5, "HEX || OCTAL")
+
+        Example:
+            codeLength: number = 5
+            type: string = "HEX" || "OCTAL" (optional - DEFAULT "OCTAL")
 
 # Editor
 
