@@ -115,7 +115,7 @@ For Utils Fuctions
 
 ###### - GenerateKeyOrCode()
 
-    GenerateKeyOrCode(5, "HEX || OCTAL")
+    GenerateKeyOrCode(codeLength, type)
 
         Example:
             codeLength: number = 5
