@@ -1,13 +1,17 @@
 import * as moment from "moment";
 
 //! Get Start Of The Date And End Of The Date
-export const GetStartAndEndDateTime = (startDate: string, endDate: string) => {
-    const startDay = moment(startDate);
-    const endDay = moment(endDate);
-    return {
-        start: moment(startDay).startOf('day').toDate(),
-        end: moment(endDay).endOf('day').toDate(),
-    };
+export const GetStartAndEndDateTime = (startDate: string, endDate: string): { start: Date, end: Date } | Error => {
+    try {
+        const startDay = moment(startDate);
+        const endDay = moment(endDate);
+        return {
+            start: moment(startDay).startOf('day').toDate(),
+            end: moment(endDay).endOf('day').toDate(),
+        };
+    } catch (error: any) {
+        throw new Error(error)
+    }
 };
 
 //! Seconds To Time
