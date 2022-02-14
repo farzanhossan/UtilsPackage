@@ -99,6 +99,13 @@ For Utils Fuctions
         Example:
             number: string = "+8801700000000"
 
+###### - IsValidUserName()
+
+    IsValidUserName( username )
+
+        Example:
+            username: string = "aamaruf131"
+
 ###### - IsValidUUID()
 
     IsValidUUID( uuid )
