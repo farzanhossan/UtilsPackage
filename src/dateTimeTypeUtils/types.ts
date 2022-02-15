@@ -1,1 +1,1 @@
-type DateTime = string | number | Date
+export type DateTime = string | number | Date

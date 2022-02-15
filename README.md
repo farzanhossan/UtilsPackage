@@ -13,8 +13,8 @@ For Utils Fuctions
     GetStartAndEndDateTime(fromDate, toDate)
 
         Example:
-            fromDate: string = "2021-01-01"
-            toDate: string = "2021-01-02"
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
 
 ###### - SecondsToTime()
 
@@ -28,8 +28,8 @@ For Utils Fuctions
     GetTimeDifference(fromDate, toDate)
 
         Example:
-            fromDate: string = "2021-01-01"
-            toDate: string = "2021-01-02"
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
 
 ## Array Related
 

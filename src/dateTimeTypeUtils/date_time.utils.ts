@@ -1,4 +1,5 @@
 import * as moment from "moment";
+import { DateTime } from "./types";
 
 //! Get Start Of The Date And End Of The Date
 export const GetStartAndEndDateTime = (startDate: DateTime, endDate: DateTime): { start: Date, end: Date } => {
