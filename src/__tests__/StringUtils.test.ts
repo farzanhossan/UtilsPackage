@@ -14,3 +14,6 @@ test('IsValidUuid', () => {
 test('CamelCaseToSeparateString', () => {
     expect(CamelCaseToSeparateString('camelCaseString')).toBe('Camel Case String');
 });
+// test('array Test', () => {
+//     expect(UniqueArray([1, 1])).toContain(1);
+// });
