@@ -1,5 +1,5 @@
-export * from './array.helper';
-export * from './date_time.helper';
-export * from './regex.helper';
-export * from './string.helper';
+export * from './arrayTypeUtils/array.utils';
+export * from './dateTimeTypeUtils/date_time.utils';
+export * from './helpers/regex.helper';
+export * from './stringTypeUtils/string.utils';
 

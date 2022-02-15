@@ -1,4 +1,4 @@
-import { CamelCaseToSeparateString } from ".";
+import { CamelCaseToSeparateString } from "..";
 
 //! Asynchronous Foreach
 export const AsyncForEach = async (array: any[], callback: any) => {

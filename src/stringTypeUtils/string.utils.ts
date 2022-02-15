@@ -1,5 +1,5 @@
-import { USERNAME_REGEX } from ".";
-import { BD_NUMBER_REGEX, EMAIL_REGEX, UUID_REGEX } from "./regex.helper";
+import { USERNAME_REGEX } from "..";
+import { BD_NUMBER_REGEX, EMAIL_REGEX, UUID_REGEX } from "../helpers/regex.helper";
 
 //! Email Validation True/False
 export const IsValidEmail = (email: string): boolean => {
@@ -39,8 +39,8 @@ export const GenerateKeyOrCode = (digit: number, charType?: string): string => {
     ? charType === "OCTAL"
       ? 8
       : charType === "HEX"
-      ? 16
-      : 8
+        ? 16
+        : 8
     : 8;
   const length = digit ? digit : 10;
   return "x".repeat(length).replace(/[xy]/g, function (char) {
