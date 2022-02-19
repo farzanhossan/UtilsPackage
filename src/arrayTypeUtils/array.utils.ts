@@ -44,6 +44,10 @@ export const IntersectionArray = (array1: any[], array2: any[]): any[] => {
         return array2.indexOf(n) !== -1;
     });
 };
+//! Plain Array Exclude ---Return An Array
+export const ExcludeArray = (array1: any[], array2: any[]): any[] => {
+    return array1.filter(x => !array2.includes(x));
+};
 
 //! Parse A Object To An Array
 export const ParseObjectToArray = (object: any): any => {
