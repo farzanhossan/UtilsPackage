@@ -68,6 +68,14 @@ For Utils Fuctions
         Example:
             array: array[] = [ 1, 2, 3, 4]
 
+###### - IntersectionArray()
+
+    IntersectionArray( array1[], array2[])
+
+        Example:
+            array1: array[] = [ 1, 2, 3, 4]
+            array1: array[] = [ 2, 3, 4, 5]
+
 ###### - ParseObjectToArray()
 
     ParseObjectToArray( object )

@@ -33,9 +33,16 @@ export const UniqueArrayOfObjects = (array: any[], attr: string): any[] => {
     return [...new Map(array.map(item => [item[attr], item])).values()];
 };
 
-//! Plain Array Unique Using Attribute ---Return An Array
+//! Plain Array Unique ---Return An Array
 export const UniqueArray = (array: any[]): any[] => {
     return [...new Set(array)]
+};
+
+//! Plain Array Intersection ---Return An Array
+export const IntersectionArray = (array1: any[], array2: any[]): any[] => {
+    return array1.filter(function (n) {
+        return array2.indexOf(n) !== -1;
+    });
 };
 
 //! Parse A Object To An Array
