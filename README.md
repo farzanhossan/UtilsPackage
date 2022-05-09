@@ -144,6 +144,15 @@ For Utils Fuctions
             codeLength: number = 5
             type: string = "HEX" || "OCTAL" (optional - DEFAULT "OCTAL")
 
+###### - GenerateKeyOrCodeWithPrefix()
+
+    GenerateKeyOrCodeWithPrefix( prefix, length, code )
+
+        Example:
+            prefix: string = "0"
+            length: number = 8
+            code: string = "ABC"
+
 # Editor
 
 **_Farzan Hossan Shaikat_**

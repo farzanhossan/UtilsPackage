@@ -50,6 +50,12 @@ export const GenerateKeyOrCode = (digit: number, charType?: string): string => {
   });
 };
 
+//! Generate Key Or Code With Prefix
+export const GenerateKeyOrCodeWithPrefix = (prefix: string, length: number, code: string): string => {
+  const str = prefix.repeat(length)
+  return (str + code).slice(-length)
+};
+
 //! Username Validation True/False
 export const IsValidUserName = (username: string): boolean => {
   return username ? (username.match(USERNAME_REGEX) ? true : false) : false;
