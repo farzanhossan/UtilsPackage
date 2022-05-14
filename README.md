@@ -153,6 +153,15 @@ For Utils Fuctions
             length: number = 8
             code: string = "ABC"
 
+## Object Related
+
+###### - CloneObject()
+
+    CloneObject( object )
+
+        Example:
+            object: Object = {}
+
 # Editor
 
 **_Farzan Hossan Shaikat_**
