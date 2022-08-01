@@ -36,5 +36,7 @@
   "files": [
     "lib/**/*"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
