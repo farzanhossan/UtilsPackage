@@ -31,6 +31,38 @@ For Utils Fuctions
             fromDate: string | number | Date = "2021-01-01"
             toDate: string | number | Date = "2021-01-02"
 
+###### - GetTimeDifferenceInDays()
+
+    GetTimeDifferenceInDays(fromDate, toDate)
+
+        Example:
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
+
+###### - GetTimeDifferenceInHours()
+
+    GetTimeDifferenceInHours(fromDate, toDate)
+
+        Example:
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
+
+###### - GetTimeDifferenceInMinutes()
+
+    GetTimeDifferenceInMinutes(fromDate, toDate)
+
+        Example:
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
+
+###### - GetTimeDifferenceInSeconds()
+
+    GetTimeDifferenceInSeconds(fromDate, toDate)
+
+        Example:
+            fromDate: string | number | Date = "2021-01-01"
+            toDate: string | number | Date = "2021-01-02"
+
 ## Array Related
 
 ###### - ArrayGroupByAttribute()
