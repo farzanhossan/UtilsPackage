@@ -239,36 +239,32 @@ UtilsPackage is a collection of utility functions designed to simplify common ta
   **Example:**
 
   ```javascript
-  const { IntersectionArray } = require('utils-package');
+  const { IntersectionArray } = require("utils-package");
 
-  const array1 = [1,
+  const array1 = [1, 2, 3, 4];
+  const array2 = [2, 3, 4, 5];
+
+  const intersection = IntersectionArray(array1, array2);
+
+  console.log(intersection); // Output: [2, 3, 4]
   ```
-
-2, 3, 4];
-const array2 = [2, 3, 4, 5];
-
-const intersection = IntersectionArray(array1, array2);
-
-console.log(intersection); // Output: [2, 3, 4]
-
-````
 
 - **ExcludeArray(array1[], array2[])**
 
-Get an array excluding elements present in array2 from array1.
+  Get an array excluding elements present in array2 from array1.
 
-**Example:**
+  **Example:**
 
-```javascript
-const { ExcludeArray } = require('utils-package');
+  ```javascript
+  const { ExcludeArray } = require("utils-package");
 
-const array1 = [1, 2, 3, 4];
-const array2 = [2, 3, 4, 5];
+  const array1 = [1, 2, 3, 4];
+  const array2 = [2, 3, 4, 5];
 
-const excludedArray = ExcludeArray(array1, array2);
+  const excludedArray = ExcludeArray(array1, array2);
 
-console.log(excludedArray); // Output: [1]
-````
+  console.log(excludedArray); // Output: [1]
+  ```
 
 - **ParseObjectToArray(object)**
 
@@ -469,6 +465,8 @@ yarn add utils-package
 - Farzan Hossan Shaikat
 
 Feel free to contribute to this project by submitting pull requests or reporting issues.
+
+## License
 
 ---
 
