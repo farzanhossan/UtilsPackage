@@ -1,18 +1,5 @@
 import { CamelCaseToSeparateString } from "..";
 
-//! Array of Objects CountBy Using Attribute --- Return A Object
-export const ArrayCountByAttribute = (array: any[], attr: string): any => {
-  const result = array.reduce(
-    (previousValue, currentValue) => (
-      (previousValue[currentValue[attr]] =
-        ++previousValue[currentValue[attr]] || 1),
-      previousValue
-    ),
-    {}
-  );
-  return result;
-};
-
 //! Array of Objects Unique Using Attribute --- Return An Array
 export const UniqueArrayOfObjects = (array: any[], attr: string): any[] => {
   return [...new Map(array.map((item) => [item[attr], item])).values()];
