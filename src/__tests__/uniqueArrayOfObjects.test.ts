@@ -48,7 +48,7 @@ describe("UniqueArrayOfObjects", () => {
     const inputArray = "notAnArray";
     // @ts-expect-error to suppress TypeScript error for test purposes
     expect(() => UniqueArrayOfObjects(inputArray, "attr")).toThrowError(
-      "UniqueArrayOfObjects ~ Expected an array."
+      "UniqueArrayOfObjects ~ Expected an array, instead got string"
     );
   });
 });

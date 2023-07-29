@@ -1,10 +1,5 @@
 import { CamelCaseToSeparateString } from "..";
 
-//! Plain Array Unique ---Return An Array
-export const UniqueArray = (array: any[]): any[] => {
-  return [...new Set(array)];
-};
-
 //! Plain Array Intersection ---Return An Array
 export const IntersectionArray = (array1: any[], array2: any[]): any[] => {
   return array1.filter(function (n) {

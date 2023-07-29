@@ -22,7 +22,9 @@ export const ArrayCountByAttribute = (
   attr: string
 ): CountByResult => {
   if (!Array.isArray(array)) {
-    throw new Error("Input must be an array.");
+    throw new Error(
+      `ArrayCountByAttribute ~ Expected an array, instead got ${typeof array}`
+    );
   }
 
   if (typeof attr !== "string" || attr === "") {

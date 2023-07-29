@@ -33,7 +33,7 @@ describe("ArrayGroupByAttribute", () => {
   it("throws an error if the input is not an array", () => {
     // @ts-expect-error to suppress TypeScript error for test purposes
     expect(() => ArrayGroupByAttribute("invalidInput", "age")).toThrow(
-      "ArrayGroupByAttribute ~ Expected an array."
+      "ArrayGroupByAttribute ~ Expected an array, instead got string"
     );
   });
 

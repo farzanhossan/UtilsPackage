@@ -3,7 +3,9 @@ export const UniqueArrayOfObjects = <T extends Record<string, any>>(
   attr: keyof T
 ): T[] => {
   if (!Array.isArray(array)) {
-    throw new Error("UniqueArrayOfObjects ~ Expected an array.");
+    throw new Error(
+      `UniqueArrayOfObjects ~ Expected an array, instead got ${typeof array}`
+    );
   }
 
   const seenValues = new Set<T[keyof T]>();

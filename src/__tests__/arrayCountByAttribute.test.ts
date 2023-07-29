@@ -44,7 +44,7 @@ describe("ArrayCountByAttribute", () => {
   it("should throw an error for invalid input", () => {
     // @ts-expect-error to suppress TypeScript error for test purposes
     expect(() => ArrayCountByAttribute(null, "name")).toThrowError(
-      "Input must be an array."
+      "ArrayCountByAttribute ~ Expected an array, instead got object"
     );
     expect(() => ArrayCountByAttribute(people, "")).toThrowError(
       "Attribute must be a non-empty string."
