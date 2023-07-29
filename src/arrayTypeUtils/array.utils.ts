@@ -1,11 +1,6 @@
 import { CamelCaseToSeparateString } from "..";
 
-//! Plain Array Intersection ---Return An Array
-export const IntersectionArray = (array1: any[], array2: any[]): any[] => {
-  return array1.filter(function (n) {
-    return array2.indexOf(n) !== -1;
-  });
-};
+
 //! Plain Array Exclude ---Return An Array
 export const ExcludeArray = (array1: any[], array2: any[]): any[] => {
   return array1.filter((x) => !array2.includes(x));
