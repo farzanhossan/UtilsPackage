@@ -4,11 +4,147 @@
 
 UtilsPackage is a collection of utility functions designed to simplify common tasks in your projects. Whether you're working with dates, arrays, strings, or objects, these functions will help you get the job done efficiently. Just enjoy the convenience and boost your productivity!
 
+## How to Use
+
+You can use these utility functions in your projects by simply importing the `UtilsPackage` and calling the functions as needed.
+
+## Installation
+
+To install UtilsPackage, you can use your package manager of choice:
+
+```bash
+npm install utils-package
+
+# or
+
+yarn add utils-package
+```
+
 ## Features
 
 ### Date Time Related
 
-- **GetStartAndEndDateTime(fromDate, toDate)**
+- [**GetStartAndEndDateTime(fromDate, toDate)**](#getstartandenddatetime)
+
+  Get the start and end date and time between two given dates.
+
+- [**SecondsToTime(seconds)**](#secondstotime)
+
+  Convert the given seconds into a human-readable time format.
+
+- [**GetTimeDifference(fromDate, toDate)**](#gettimedifference)
+
+  Calculate the time difference between two dates.
+
+- [**GetTimeDifferenceInDays(fromDate, toDate)**](#gettimedifferenceindays)
+
+  Get the number of days between two dates.
+
+- [**GetTimeDifferenceInHours(fromDate, toDate)**](#gettimedifferenceinhours)
+
+  Get the number of hours between two dates.
+
+- [**GetTimeDifferenceInMinutes(fromDate, toDate)**](#gettimedifferenceinminutes)
+
+  Get the number of minutes between two dates.
+
+- [**GetTimeDifferenceInSeconds(fromDate, toDate)**](#gettimedifferenceinseconds)
+
+  Get the number of seconds between two dates.
+
+- [**FormatDate(date, format)**](#formatdate)
+
+  Format a date object or a date string into a specified format.
+
+### Array Related
+
+- [**ArrayGroupByAttribute(array[], key)**](#arraygroupbyattribute)
+
+  Group an array of objects by a specific attribute.
+
+- [**ArrayCountByAttribute(array[], key)**](#arraycountbyattribute)
+
+  Count occurrences of a specific attribute in an array of objects.
+
+- [**AsyncForEach(array[], callback)**](#asyncforeach)
+
+  Asynchronously iterate over an array and apply a callback function.
+
+- [**UniqueArrayOfObjects(array[], attribute)**](#uniquearrayofobjects)
+
+  Get a new array with unique objects based on a specified attribute.
+
+- [**UniqueArray(array[])**](#uniquearray)
+
+  Get a new array with unique elements from the given array.
+
+- [**IntersectionArray(array1[], array2[])**](#intersectionarray)
+
+  Get an array containing elements present in both array1 and array2.
+
+- [**ExcludeArray(array1[], array2[])**](#excludearray)
+
+  Get an array excluding elements present in array2 from array1.
+
+- [**ParseObjectToArray(object)**](#parseobjecttoarray)
+
+  Convert an object into an array.
+
+- [**JsonChunkArray(array[objects], size)**](#jsonchunkarray)
+
+  Split a JSON array of objects into smaller chunks of a given size.
+
+### String Related
+
+- [**IsValidEmail(email)**](#isvalidemail)
+
+  Check if the given string is a valid email address.
+
+- [**IsValidBDPhoneNumber(number)**](#isvalidbdphonenumber)
+
+  Check if the given string is a valid Bangladesh phone number.
+
+- [**IsValidUserName(username)**](#isvalidusername)
+
+  Check if the given string is a valid username.
+
+- [**IsValidUUID(uuid)**](#isvaliduuid)
+
+  Check if the given string is a valid UUID (Universally Unique Identifier).
+
+- [**CamelCaseToSeparateString(camelCaseString)**](#camelcasetoseparatestring)
+
+  Convert a CamelCase string into a separated string.
+
+- [**GenerateKeyOrCode(codeLength, type)**](#generatekeyorcode)
+
+  Generate a random key or code of a specified length and type (HEX or OCTAL).
+
+- [**GenerateKeyOrCodeWithPrefix(prefix, length, code)**](#generatekeyorcodewithprefix)
+
+  Generate a random key or code with a specified prefix and length.
+
+- [**SlugifyString(inputString)**](#slugifystring)
+
+  Convert a string into a URL-friendly slug.
+
+### Object Related
+
+- [**CloneObject(object)**](#cloneobject)
+
+  Create a deep copy of the given object.
+
+- [**MergeObjects(object1, object2, overwrite)**](#mergeobjects)
+
+  Merge two objects into one. If `overwrite` is true, existing properties in `object1` will be overwritten by `object2` properties.
+
+- [**ObjectToArray(object)**](#objecttoarray)
+
+  Convert an object into an array of key-value pairs.
+
+### Date Time Related
+
+- **GetStartAndEndDateTime(fromDate, toDate)** {#getstartandenddatetime}
 
   Get the start and end date and time between two given dates.
 
