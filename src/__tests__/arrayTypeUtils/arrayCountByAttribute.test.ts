@@ -1,4 +1,4 @@
-import { ArrayCountByAttribute } from "..";
+import { ArrayCountByAttribute } from "../..";
 
 describe("ArrayCountByAttribute", () => {
   const people = [

@@ -1,4 +1,4 @@
-import { IntersectionArray } from "..";
+import { IntersectionArray } from "../..";
 
 describe("IntersectionArray", () => {
   it("should return the intersection of two number arrays", () => {

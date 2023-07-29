@@ -1,4 +1,4 @@
-import { ArrayGroupByAttribute } from "../index"; // Replace with the correct import path
+import { ArrayGroupByAttribute } from "../../index"; // Replace with the correct import path
 
 interface Person {
   id: number;

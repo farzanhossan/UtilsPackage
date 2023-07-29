@@ -1,4 +1,4 @@
-import { UniqueArrayOfObjects } from "../index";
+import { UniqueArrayOfObjects } from "../../index";
 
 describe("UniqueArrayOfObjects", () => {
   it("should return an empty array for an empty input array", () => {

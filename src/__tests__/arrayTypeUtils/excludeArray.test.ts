@@ -1,4 +1,4 @@
-import { ExcludeArray } from "..";
+import { ExcludeArray } from "../..";
 
 describe("ExcludeArray", () => {
   it("should exclude elements from array2 in array1", () => {

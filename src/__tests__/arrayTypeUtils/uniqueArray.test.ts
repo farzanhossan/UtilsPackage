@@ -1,4 +1,4 @@
-import { UniqueArray } from "..";
+import { UniqueArray } from "../..";
 
 describe("UniqueArray utility function", () => {
   it("should return an array with unique elements", () => {

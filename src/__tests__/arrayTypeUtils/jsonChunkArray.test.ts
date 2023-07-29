@@ -1,4 +1,4 @@
-import { JsonChunkArray } from "..";
+import { JsonChunkArray } from "../..";
 
 describe("JsonChunkArray", () => {
   it("should chunk the array correctly with generic type", () => {

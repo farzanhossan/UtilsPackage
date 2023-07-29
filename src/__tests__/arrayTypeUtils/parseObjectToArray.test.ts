@@ -1,4 +1,4 @@
-import { ParseObjectToArray } from "..";
+import { ParseObjectToArray } from "../..";
 
 // Define a valid input object with number values
 const validInputObject = {

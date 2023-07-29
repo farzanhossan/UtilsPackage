@@ -1,5 +1,5 @@
 // AsyncForEach.test.ts (unit test file)
-import { AsyncForEach } from "../index";
+import { AsyncForEach } from "../../index";
 
 // Example utility function for testing purposes
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
