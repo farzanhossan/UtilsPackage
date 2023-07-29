@@ -1,10 +1,6 @@
 import { USERNAME_REGEX } from "..";
 import { BD_NUMBER_REGEX, EMAIL_REGEX, UUID_REGEX } from "../helpers/regex.helper";
 
-//! Email Validation True/False
-export const IsValidEmail = (email: string): boolean => {
-  return email ? (email.match(EMAIL_REGEX) ? true : false) : false;
-};
 
 //! BD Phone Number Validation True/False
 export const IsValidBDPhoneNumber = (number: string): boolean => {

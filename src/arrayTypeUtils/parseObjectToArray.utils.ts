@@ -1,4 +1,4 @@
-import { CamelCaseToSeparateString } from "..";
+import { CamelCaseToSeparateString } from "../stringTypeUtils/string.utils";
 
 type KeyValueType = {
   [key: string]: any;
