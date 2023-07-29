@@ -6,4 +6,4 @@ export * from "./uniqueArray.utils";
 export * from "./intersectionArray.utils";
 export * from "./excludeArray.utils";
 export * from "./parseObjectToArray.utils";
-export * from "./array.utils";
+export * from "./jsonChunkArray.utils";
