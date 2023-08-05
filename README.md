@@ -62,6 +62,10 @@ yarn add utils-package
 
   Group an array of objects by a specific attribute.
 
+- [**ArrayShuffle(array[])**](#arrayshuffle)
+
+  Shuffling an array.
+
 - [**ArrayCountByAttribute(array[], key)**](#arraycountbyattribute)
 
   Count occurrences of a specific attribute in an array of objects.
@@ -295,6 +299,33 @@ yarn add utils-package
       { name: "Alexa", age: 28 },
     ],
   }
+  */
+  ```
+
+- **ArrayShuffle(array[])**
+
+  Shuffling an array.
+
+  **Example:**
+
+  ```javascript
+  const { ArrayShuffle } = require("utils-package");
+
+  const array = [
+    { name: "Jhon Doe", age: 25 },
+    { name: "Alexa", age: 27 },
+    { name: "Alexa", age: 28 },
+  ];
+
+  const shuffledArray = ArrayShuffle(array);
+
+  console.log(shuffledArray);
+  /* Output:
+  [
+    { name: "Alexa", age: 27 },
+    { name: "Alexa", age: 28 },
+    { name: "Jhon Doe", age: 25 },
+  ]
   */
   ```
 

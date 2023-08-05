@@ -1,4 +1,5 @@
 export * from "./asyncForEach.utils";
+export * from "./arrayShuffle.utils";
 export * from "./arrayGroupByAttribute.utils";
 export * from "./arrayCountByAttribute.utils";
 export * from "./uniqueArrayOfObjects.utils";
