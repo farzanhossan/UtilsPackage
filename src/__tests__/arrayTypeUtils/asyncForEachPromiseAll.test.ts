@@ -1,15 +1,15 @@
-// AsyncForEach.test.ts (unit test file)
-import { AsyncForEach } from "../../index";
+// AsyncForEachPromiseAll.test.ts (unit test file)
+import { AsyncForEachPromiseAll } from "../../index";
 
 // Example utility function for testing purposes
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-describe("AsyncForEach", () => {
+describe("AsyncForEachPromiseAll", () => {
   it("should process each item in the array", async () => {
     const array = [1, 2, 3, 4, 5];
     const processedItems: number[] = [];
 
-    await AsyncForEach(array, async (item, index) => {
+    await AsyncForEachPromiseAll(array, async (item, index) => {
       await delay(100); // Simulate some asynchronous operation
       processedItems.push(item);
     });
@@ -21,7 +21,7 @@ describe("AsyncForEach", () => {
     const array: number[] = [];
     const processedItems: number[] = [];
 
-    await AsyncForEach(array, async (item, index) => {
+    await AsyncForEachPromiseAll(array, async (item, index) => {
       await delay(100); // Simulate some asynchronous operation
       processedItems.push(item);
     });
@@ -33,7 +33,7 @@ describe("AsyncForEach", () => {
     const array = ["a", "b", "c"];
     const processedItems: string[] = [];
 
-    await AsyncForEach(array, async (item, index) => {
+    await AsyncForEachPromiseAll(array, async (item, index) => {
       await delay(100); // Simulate some asynchronous operation
       processedItems.push(item);
     });
@@ -47,9 +47,9 @@ describe("AsyncForEach", () => {
     const errorCallback = jest
       .fn()
       .mockRejectedValue(new Error("Error in callback"));
-    await expect(AsyncForEach(array, errorCallback)).rejects.toThrowError(
-      "Error in callback"
-    );
+    await expect(
+      AsyncForEachPromiseAll(array, errorCallback)
+    ).rejects.toThrowError("Error in callback");
     expect(errorCallback).toHaveBeenCalledTimes(array.length);
   });
 
@@ -58,9 +58,9 @@ describe("AsyncForEach", () => {
     const invalidCallback = jest.fn();
 
     await expect(
-      AsyncForEach(invalidInput as any, invalidCallback)
+      AsyncForEachPromiseAll(invalidInput as any, invalidCallback)
     ).rejects.toThrowError(
-      "AsyncForEach ~ Expected an array, instead got string"
+      "AsyncForEachPromiseAll ~ Expected an array, instead got string"
     );
     expect(invalidCallback).not.toHaveBeenCalled();
   });
@@ -70,7 +70,9 @@ describe("AsyncForEach", () => {
     const invalidCallback = "not_a_function";
 
     await expect(
-      AsyncForEach(array, invalidCallback as any)
-    ).rejects.toThrowError("AsyncForEach ~ Callback function is not provided.");
+      AsyncForEachPromiseAll(array, invalidCallback as any)
+    ).rejects.toThrowError(
+      "AsyncForEachPromiseAll ~ Callback function is not provided."
+    );
   });
 });
